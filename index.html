@@ -11,9 +11,11 @@ function hide(id) {
 }
 
 function show(id) {
+    console.log(id)
     document.getElementById(id).style.display = '';
 }
 
+    
 window.addEventListener("pageshow", function () {
     if (performance.navigation.type === performance.navigation.TYPE_BACK_FORWARD) {
         hide("forward");
